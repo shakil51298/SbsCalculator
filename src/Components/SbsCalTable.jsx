@@ -44,8 +44,7 @@ const SbsCalTable = () => {
                   )}
                 </select>
                 <br />
-                <span className="badge bg-danger">{payment}</span>
-                <span className="badge bg-danger">{bip}</span>
+                
               </td>
               <td>
                 <select>
@@ -190,94 +189,3 @@ const SbsCalTable = () => {
 
 export default SbsCalTable;
 
-// /**
-//  * <form action="" onSubmit={handleSuccessBtn}>
-//         <table class="" style={{ width: "100%" }}>
-//           <thead>
-//             <tr>
-//               <td scope="col">Device/BYOD</td>
-//               <td scope="col">Term</td>
-//               <td scope="col">Rate Plan</td>
-//               <td scope="col">QTY</td>
-//               <td scope="col">Monthly Discount</td>
-//               <td scope="col">One time service discount</td>
-//               <td scope="col">cross sell</td>
-//               <td scope="col">Add-Ons</td>
-//               <td scope="col">Province</td>
-//               {/* <td scope="col">Things</td> */}
-//               {/* <td scope="col">Pymment sys</td> */}
-//               {/* <td scope="col">Bib</td> */}
-//               </tr>
-//               </thead>
-//               <tbody>
-//                 <tr>
-//                   <td>
-//                     <select>
-//                       {/* <option value={Mobile}>{Mobile}</option> */}
-//                     </select>
-//                   </td>
-//                   <td>
-//                     <select>
-//                       {/* <option value={Term}>{Term}</option> */}
-//                     </select>
-//                   </td>
-//                   {/* <td>{Plan}</td> */}
-
-//                   <td>None</td>
-//                   <td>None</td>
-//                   {/* <td>{CrossSell}</td> */}
-//                   <td>None</td>
-//                   {/* <td>
-//                     <select onChange={handleName}>
-//                       <option value="Device">Device</option>
-//                       <option value="Apple 13 256 gb">Apple 13 256 gb</option>
-//                       <option value="Apple 13 pro max 128gb">
-//                         Apple 13 pro max 128gb
-//                       </option>
-//                       <option value="Apple 13 pro max 128gb">
-//                         Apple 13 pro max 128gb
-//                       </option>
-//                       <option value="Apple 13 pro max 128gb">
-//                         Apple 13 pro max 128gb
-//                       </option>
-//                       <option value="Apple 13 pro max 128gb">
-//                         Apple 13 pro max 128gb
-//                       </option>
-//                       <option value="Apple 13 pro max 128gb">
-//                         Apple 13 pro max 128gb
-//                       </option>
-//                       <option value="Samsung 13 256">Samsung 13 256</option>
-//                       <option value="Apple 13 pro max 128gb">
-//                         Apple 13 pro max 128gb
-//                       </option>
-//                       <option value="Apple 13 pro max 128gb">
-//                         Apple 13 pro max 128gb
-//                       </option>
-//                     </select>
-//                   </td> */}
-//                   {/* <td>
-//                     <select name="phone" id="phone" onChange={handlePayment}>
-//                       <option value="Easy_payment">Easy Payment</option>
-//                       <option value="No_Easy_payment">No Easy Payment</option>
-//                     </select>
-//                   </td> */}
-//                   {/* <td>
-//                     <select name="phone" id="phone" onChange={handleBib}>
-//                       <option value="Bib">Bib</option>
-//                       <option value="NoBib">No Bib</option>
-//                     </select>
-//                   </td> */}
-
-//                   <td>{Province}</td>
-//                   <td>
-//                     <button className="btn-success" }>
-//                       ✔️
-//                     </button>
-//                   </td>
-//                   <br />
-//                 </tr>
-
-//               </tbody>
-//             </table>
-//           </form>
-//  */
