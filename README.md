@@ -1,3 +1,3 @@
-![Alt text](../images/1.png)
-![Alt text](../images/2.png)
-![Alt text](../images/3.png)
+![first image]("../images/1.png")
+![Second]("./images/2.png")
+![third]("../images/3.png")
