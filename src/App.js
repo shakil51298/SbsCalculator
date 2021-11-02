@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+
+import { createContext, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
+import SbsCal from './Components/SbsCal';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Home from './Components/Home/Home';
+
+export const myContext = createContext();
+
+
 
 function App() {
+  const [context, setContext] = useState({});
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <myContext.Provider value={[context, setContext]}>
+      <Router className="App">
+        <Switch>
+          <Container>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/sbsCalculator">
+              <SbsCal />
+            </Route>
+          </Container>
+        </Switch>
+      </Router>
+    </myContext.Provider>
+
   );
 }
 
