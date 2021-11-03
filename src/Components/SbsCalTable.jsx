@@ -37,9 +37,9 @@ const SbsCalTable = () => {
               <td>
                 <select>
                   {Mobile == "" ? (
-                    <option value="">{Mobile}</option>
-                  ) : (
                     <option value="">iphone 13 pro 256gb</option>
+                  ) : (
+                    <option value="">{Mobile}</option>
                   )}
                 </select>
                 <br />
@@ -49,18 +49,18 @@ const SbsCalTable = () => {
               <td>
                 <select>
                   {Term == "" ? (
-                    <option value={Term}>{Term}</option>
-                  ) : (
                     <option value="">TMB</option>
+                  ) : (
+                    <option value={Term}>{Term}</option>
                   )}
                 </select>
               </td>
               <td>
                 <select>
                   {Plan == "" ? (
-                    <option value={Plan}>{Plan}</option>
-                  ) : (
                     <option value="plan #2">plan #2</option>
+                  ) : (
+                    <option value={Plan}>{Plan}</option>
                   )}
                 </select>
               </td>
@@ -72,7 +72,7 @@ const SbsCalTable = () => {
                     name="q"
                     min="1"
                     max="100"
-                    defaultValue={Qty}
+                    placeholder="1"
                   ></input>
                 ) : (
                   <input
@@ -81,7 +81,7 @@ const SbsCalTable = () => {
                     name="q"
                     min="1"
                     max="100"
-                    placeholder="1"
+                    defaultValue={Qty}
                   ></input>
                 )}
               </td>
@@ -105,9 +105,9 @@ const SbsCalTable = () => {
               </td>
               <td>
                 {CrossSell == "" ? (
-                  <input type="text" placeholder={CrossSell} />
-                ) : (
                   <input type="text" placeholder="$10" />
+                ) : (
+                  <input type="text" placeholder={CrossSell} />
                 )}
               </td>
               <td>

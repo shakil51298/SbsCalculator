@@ -5,9 +5,11 @@ import { myContext } from "../../App";
 const Home = () => {
 
     const [context, setContext] = useContext(myContext);
+    console.log(context.Mobile);
     let history = useHistory();
     const [term, setTerm] = useState("");
     const [mobile, setMobile] = useState("");
+    console.log(mobile);
     const [plan, setPlan] = useState("");
     const [qty, setQty] = useState("");
     const [timeser, settimeSer] = useState("");
@@ -45,7 +47,7 @@ const Home = () => {
                         <tr>
                             <td>
                                 <select onChange={(e) => setMobile(e.target.value)}>
-                                    <option selected value="iphone 13 pro 256gb">iphone 13 pro 256gb</option>
+                                    <option  value="iphone 13 pro 256gb">iphone 13 pro 256gb</option>
                                     <option value="iphone 12 pro 256gb">iphone 12 pro 256gb</option>
                                     <option value="iphone 11 256gb">iphone 11 256gb</option>
                                     <option value="iphone 13 pro max 256gb">iphone 13 pro max 256gb</option>
