@@ -7,13 +7,14 @@ const SbsCalTable = () => {
   console.log(Mobile, Term, Plan, Qty, CrossSell, Province, Timeser);
 
   const [btnRespose, setBtnRespose] = useState(true);
-  const [device, setDevice] = useState({});
-  const [payment, setPayment] = useState({});
-  const [bip, setBip] = useState({});
-  console.log(bip, payment, device);
+  const [device, setDevice] = useState("");
+  const [payment, setPayment] = useState("");
+  const [bip, setBip] = useState("");
+  const [allData, setAllData] = useState({});
+  console.log(allData.bip, allData.payment, allData.device);
   const handleSuccessBtn = (e) => {
     setBtnRespose(false);
-    // setAllData({ devicename: deviceName, payment: paymentSys, Bib: bib });
+    setAllData({ Device: device, Payment: payment, Bip: bip });
     e.preventDefault();
   };
   return (
@@ -44,7 +45,8 @@ const SbsCalTable = () => {
                   )}
                 </select>
                 <br />
-                
+                <span className="badge bg-danger">{allData.Payment}</span>
+                <span className="badge bg-danger">{allData.Bip}</span>
               </td>
               <td>
                 <select>
@@ -188,4 +190,3 @@ const SbsCalTable = () => {
 };
 
 export default SbsCalTable;
-
