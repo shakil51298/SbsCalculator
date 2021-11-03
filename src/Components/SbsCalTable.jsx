@@ -4,14 +4,12 @@ import { myContext } from "../App";
 const SbsCalTable = () => {
   const [context] = useContext(myContext);
   const { Mobile, Term, Plan, Qty, CrossSell, Province, Timeser } = context;
-  console.log(Mobile, Term, Plan, Qty, CrossSell, Province, Timeser);
 
   const [btnRespose, setBtnRespose] = useState(true);
   const [device, setDevice] = useState("");
   const [payment, setPayment] = useState("");
   const [bip, setBip] = useState("");
   const [allData, setAllData] = useState({});
-  console.log(allData.bip, allData.payment, allData.device);
   const handleSuccessBtn = (e) => {
     setBtnRespose(false);
     setAllData({ Device: device, Payment: payment, Bip: bip });

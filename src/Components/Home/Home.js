@@ -5,7 +5,6 @@ import { myContext } from "../../App";
 const Home = () => {
 
     const [context, setContext] = useContext(myContext);
-    console.log(context);
     let history = useHistory();
     const [term, setTerm] = useState("");
     const [mobile, setMobile] = useState("");
